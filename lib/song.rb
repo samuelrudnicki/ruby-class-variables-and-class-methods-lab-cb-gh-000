@@ -26,10 +26,6 @@ class Song
   end
 
   def self.genres
-    unique_genres = []
-    @@genres.select do |genre|
-      !unique_genres.include?(genre)
-    end
-    unique_genres
+    @@genres.uniq
   end
 end
