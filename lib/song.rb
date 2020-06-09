@@ -18,11 +18,7 @@ class Song
   end
 
   def self.artists
-    unique_artists = []
-    @@artists.select do |artist|
-      !unique_artists.include?(artist)
-    end
-    unique_artists
+    @@artists.uniq
   end
 
   def self.genres
