@@ -30,6 +30,6 @@ class Song
     @@genres.select do |genre|
       !unique_genres.include?(genre)
     end
-    unique_artists
+    unique_genres
   end
 end
